@@ -4,6 +4,7 @@
     --dark-text-color: #FFE8DB;
     --light-background-color: #FFE8DB;
     --light-text-color: #0F0E0E;
+    --highlight-color: #FF6E31;
     --font-family: 'Inter', sans-serif;
     --very-large-font-size: clamp(1.7rem, 1.0857rem + 3.0714vw, 6rem);
     --navbar-font-size: clamp(0.7rem, 0.9286rem + 0.3571vw, 1.2rem);
@@ -79,12 +80,29 @@ main p {
 }
 div#first-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+}
+div#portrait-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    
+}
+@media screen and (max-width: 976px) {
+    div#portrait-wrapper {
+        flex-direction: column;
+    }
 }
 img {
     max-inline-size: 100%;
+}
+img#portrait-image {
+    width: 100%;
+    height: auto;
+    max-height: 600px; 
+    object-fit: scale-down; 
+    border-radius: 12px;
 }
 div#first-container p {
     flex: 2;
