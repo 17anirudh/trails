@@ -69,7 +69,6 @@ nav > a:hover {
 main, div#first-container, div#second-container {
     margin-top: 60px;
     margin-bottom: 60px;
-    border: var(--highlight-color) 2px solid;
     padding-left: clamp(15px, 5%, 30px);
     padding-right: clamp(15px, 5%, 30px);
 }
