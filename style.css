@@ -77,6 +77,14 @@ main p {
     padding-bottom: 60px;
     font-size: var(--desc-font-size);
 }
+iframe#yt-video {
+    aspect-ratio: 16 / 9;
+}
+iframe#yt-music {
+    width: 0;
+    height: 0;
+    display: none;
+}
 div#first-container {
     display: flex;
     flex-direction: column;

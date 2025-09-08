@@ -1,6 +1,8 @@
 const theme_span = document.getElementById('theme-toggle');
 const clear_storage = document.getElementById('clear-localstorage');
 const root = document.documentElement;
+const music_btn = document.getElementById('music-btn');
+const audio = document.getElementById('yt-music');
 
 if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
     document.body.classList.toggle("dark-theme");
@@ -24,4 +26,8 @@ theme_span.addEventListener('click', () => {
         }, 498);
         localStorage.setItem('theme', 'light-theme');
     }
+})
+
+music_btn.addEventListener('click', () => {
+    
 })
