@@ -1,0 +1,1 @@
+🤔 No reason, just trying clean scripting, self UX analysis and SEO friendly templates

@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+:root {
+    --background-color: #0F0E0E;
+    --text-color: #FFE8DB;
+    --highlight-color: #FF6F61; 
+    --font-family: 'Inter', sans-serif;
+    --very-large-font-size: clamp(1.7rem, 1.0857rem + 3.0714vw, 6rem);
+    --navbar-font-size: clamp(0.7rem, 0.9286rem + 0.3571vw, 1.2rem);
+    --desc-font-size: clamp(0.8rem, 0.6286rem + 0.8571vw, 2rem);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+    overflow: scroll; 
+    scrollbar-width: none; 
+    -ms-overflow-style: none; 
+}
+html::-webkit-scrollbar {
+    display: none; 
+}
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: var(--font-family);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-left: clamp(15px, 5%, 30px);
+    padding-right: clamp(15px, 5%, 30px);
+}
+
+span#logo {
+    font-size: var(--very-large-font-size);
+    text-transform: lowercase;
+    margin-bottom: 10px;
+}
+nav > a {
+    text-decoration: none;
+    color: var(--text-color);
+    margin: 0 15px;
+    transition: all 0.3s ease-in;
+    font-size: var(--navbar-font-size);
+}
+span#theme-toggle {
+    cursor: pointer;
+}
+
+nav > a:hover {
+    text-decoration: underline var(--highlight-color);
+    transform: scale(1.1);
+    transform: rotateZ('2deg');
+}
+@media screen and (max-width: 445px) {
+    nav > a {
+        display: block;
+        margin: 5px 0;
+    }
+}
+main, div#first-container, div#second-container {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    border: var(--highlight-color) 2px solid;
+    padding-left: clamp(15px, 5%, 30px);
+    padding-right: clamp(15px, 5%, 30px);
+}
+main p {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    font-size: var(--desc-font-size);
+}
+div#first-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+img {
+    max-inline-size: 100%;
+}
+div#first-container p {
+    flex: 2;
+}
