@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 :root {
-    --background-color: #0F0E0E;
-    --text-color: #FFE8DB;
-    --highlight-color: #FF6F61; 
+    --dark-background-color: #0F0E0E;
+    --dark-text-color: #FFE8DB;
+    --light-background-color: #FFE8DB;
+    --light-text-color: #0F0E0E;
     --font-family: 'Inter', sans-serif;
     --very-large-font-size: clamp(1.7rem, 1.0857rem + 3.0714vw, 6rem);
     --navbar-font-size: clamp(0.7rem, 0.9286rem + 0.3571vw, 1.2rem);
@@ -23,16 +24,20 @@ html::-webkit-scrollbar {
     display: none; 
 }
 body {
-    background-color: var(--background-color);
-    color: var(--text-color);
+    background-color: var(--light-background-color);
+    color: var(--light-text-color);
     font-family: var(--font-family);
     display: flex;
     flex-direction: column;
     text-align: center;
     padding-left: clamp(15px, 5%, 30px);
     padding-right: clamp(15px, 5%, 30px);
+    transition: background-color 0.5s ease, color 0.5s ease;
 }
-
+body.dark-theme {
+    background-color: var(--dark-background-color);
+    color: var(--dark-text-color);
+}
 span#logo {
     font-size: var(--very-large-font-size);
     text-transform: lowercase;
@@ -83,4 +88,12 @@ img {
 }
 div#first-container p {
     flex: 2;
+}
+footer a, span {
+    text-decoration: none;
+    color: var(--text-color);
+    margin: 0 15px;
+    transition: all 0.3s ease-in;
+    font-size: var(--navbar-font-size);
+    cursor: pointer;
 }

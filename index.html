@@ -29,13 +29,13 @@
 </head>
 <body>
     <header id="header">
-        <span id="logo">Trails.fgh</span>
+        <span id="logo" onclick="location.reload();">Trails.fgh</span>
         <nav id="navbar">
             <a href="#about">About</a>
             <a href="#services">Services</a>
             <a href="#contact">Contact</a>
             <a href="#portfolio">Portfolio</a>
-            <span class="material-symbols-outlined" title="Click to change theme" id="theme-toggle">light_mode</span>
+            <span class="material-symbols-outlined" id="theme-toggle"></span>
         </nav>
     </header>
     <main>
@@ -65,7 +65,7 @@
         </div>
     </main>
     <footer>
-        <a href="#header">Scroll to top</a>
+        <a href="#header" title="Scroll to top" id="footer_a"><span class="material-symbols-outlined">arrow_warm_up</span></a>
     </footer>
     <script defer src="script.js"></script>
 </body>
