@@ -72,18 +72,23 @@ main, div#first-container, div#second-container {
     padding-left: clamp(15px, 5%, 30px);
     padding-right: clamp(15px, 5%, 30px);
 }
+main#music {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
 main p {
     padding-top: 60px;
     padding-bottom: 60px;
     font-size: var(--desc-font-size);
 }
-iframe#yt-video {
+div#player{
     aspect-ratio: 16 / 9;
 }
-iframe#yt-music {
-    width: 0;
-    height: 0;
-    display: none;
+iframe#spotify-link {
+    width: 100%;
 }
 div#first-container {
     display: flex;

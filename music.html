@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Loader, 3D, Testing">
+    <meta name="description" content="Test website soley created to test some web concepts and ideas, and to check social media previews">
+    <meta name="author" content="Anirudh">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Trails.fgh">
+    <meta property="og:description" content="Test website soley created to test some web concepts and ideas, and to check social media previews">
+    <meta property="og:image" content="https://img.lovepik.com/element/40116/9419.png_1200.png">
+    <meta property="og:url" content="https://17anirudh.github.io/trails/">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Trails.fgh">
+    <meta name="twitter:description" content="Test website soley created to test some web concepts and ideas, and to check social media previews">
+    <meta name="twitter:image" content="https://img.lovepik.com/element/40116/9419.png_1200.png">
+
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/crab_logo.png" type="image/png">
+    <link rel="apple-touch-icon" href="img/crab_logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <title>Trails.fgh</title>
+
+    <script src="https://www.youtube.com/iframe_api"></script>
+</head>
+<body>
+    <header id="header">
+        <a href="index.html" style="text-decoration: none;">
+            <span id="logo" href="index.html">Trails.fgh</span>
+        </a>
+        <nav id="navbar">
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+            <a href="music.html">Music</a>
+            <span class="material-symbols-outlined" id="theme-toggle"></span>
+        </nav>
+    </header>
+    <main id="music">
+        <div id="yt-container">
+            <h2>Youtube</h2>
+            <div id="player"></div>
+            <div id="controls">
+                <input type="range" min="0" max="100" name="volume" id="volume" value="10">
+                <span class="material-symbols-outlined" id="skip10s">forward_10</span>
+                <span class="material-symbols-outlined" id="play-pause">play_arrow</span> <!--pause_circle-->
+                <span class="material-symbols-outlined" id="rewind10s">replay_10</span>
+                <span class="material-symbols-outlined" id="stop">stop</span>
+            </div>
+        </div>
+        <div id="spotify-container">
+            <iframe id="spotify-link" data-testid="embed-iframe" style="border-radius:12px" 
+            src="https://open.spotify.com/embed/track/5rzI6Jnlhx8DgVgsOLorfW?utm_source=generator" 
+            frameBorder="0" allowfullscreen="" width="100%" height="352"
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+            loading="lazy"></iframe>
+        </div>
+    </main>
+    <div id="toast"></div>
+    <footer>
+        <p>I'm just a kid trying to <strong>test</strong> embedded tags</p>
+    </footer>
+    <script src="script.js"></script>
+    <script src="youtube.js"></script>
+</body>
+</html>
